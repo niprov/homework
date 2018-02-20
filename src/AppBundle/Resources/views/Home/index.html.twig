@@ -1,0 +1,55 @@
+{% extends '@App/base_layout.html.twig' %}
+
+{% block title %}
+    Home
+{% endblock %}
+
+{% block content %}
+    <div class="row justify-content-center">
+        <div class="col-md-6" id="form-wrapper">
+        {{ form_start(home_form) }}
+        <div class="form-group">
+            {{ form_label(home_form.firstname) }}
+            {{ form_errors(home_form.firstname) }}
+            {{ form_widget(home_form.firstname) }}
+        </div>
+
+        <div class="form-group">
+            {{ form_label(home_form.surname) }}
+            {{ form_errors(home_form.surname) }}
+            {{ form_widget(home_form.surname) }}
+        </div>
+
+        <div class="form-group">
+            {{ form_label(home_form.file) }}
+            {{ form_errors(home_form.file) }}
+            {{ form_widget(home_form.file) }}
+        </div>
+
+        {{ form_widget(home_form.save) }}
+
+        {{ form_end(home_form) }}
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="alert alert-danger upload-form-errors" role="alert">
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <div class="row justify-content-center">
+        <div class="col-md-6">
+            <div class="alert alert-success upload-form-success" role="alert">
+                <ul>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

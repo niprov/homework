@@ -1,0 +1,9 @@
+app:
+    resource: "@AppBundle/Controller/"
+    type:     annotation
+
+_fos_routing:
+    resource: routing_fos.yml
+
+fos_user_profile_show:
+    path: /

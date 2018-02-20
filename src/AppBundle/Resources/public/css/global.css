@@ -1,0 +1,8 @@
+.base-containter {
+    margin-top: 100px;
+}
+
+.upload-form-errors, .upload-form-success {
+    margin-top: 50px;
+    display: none;
+}
