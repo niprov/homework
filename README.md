@@ -6,7 +6,7 @@
 2. The following:
 
 * `curl -sS https://getcomposer.org/installer | php`
-* `php composer.phar install`
+* `php composer.phar install`  -> please ensure that mailer_user has some dummy data (fos_user will complain)
 * `php bin/console doctrine:database:create`
 * `php bin/console doctrine:schema:create`
 * `php bin/console doctrine:fixtures:load`
