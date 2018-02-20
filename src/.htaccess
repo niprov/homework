@@ -5,5 +5,3 @@
     Order deny,allow
     Deny from all
 </IfModule>
-
-php_value post_max_size 30M
