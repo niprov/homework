@@ -12,10 +12,7 @@
 * `php bin/console doctrine:fixtures:load`
 * `php bin/console assets:install web`
 
-# Easy way
-* run `php bin/console server:run`
-
-# Proper way -> XAMPP Windows Installation
+XAMPP Windows Installation
 
 1. Add the following to the `c:\Windows\System32\drivers\etc\hosts`:
 ```
